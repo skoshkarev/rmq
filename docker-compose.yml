@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: chess
+    ports:
+      - "7077:7077"
+    env_file:
+      - .env

@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>RabbitMQ Messages</title>
+</head>
+<body>
+    <div class="container">
+        <h1>RabbitMQ Queue Task</h1>
+        <div id="message-container"></div>
+        <div>
+            <label for="message-rate">Messages per second:</label>
+            <input type="number" id="message-rate" value="300" min="1" max="10000">
+            <button id="save-rate">Save</button>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Current Queue Length</h1>
+        <div id="queues">
+            <div>
+                <h2>Mobile</h2>
+                <p id="mobile-queue"></p>
+            </div>
+            <div>
+                <h2>Web</h2>
+                <p id="web-queue"></p>
+            </div>
+            <div>
+                <h2>Email</h2>
+                <p id="email-queue"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
